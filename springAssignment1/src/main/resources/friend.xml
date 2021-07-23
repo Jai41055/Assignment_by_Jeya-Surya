@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="friend" class="injectlist.Question">
+		<property name="questionId" value="123"/>
+		<property name="bestfriends" value="Tell me your best friends?"/>
+		<property name="answerinlist">
+			<list>
+				<value>vinith</value>
+				<value>vinoth</value>
+				<value>vasanth</value>
+				<value>kalees</value>
+			</list>
+		</property>
+	
+		<property name="answerinset">
+			<set>
+			<value>vinoth</value>
+				<value>Lakshmi</value>
+				<value>Jyothi</value>
+				<value>kishore</value>
+			</set>
+		</property>
+		<property name="answerinmap">
+			<map>
+				 <entry key="1" value="abi"/>
+	            <entry key="2" value="kavi"/>
+	            <entry key="3" value="ashmi"/>
+	            <entry key="4" value="bibi"/>
+	            <entry key="5" value="mathi"/>
+			</map>
+		</property>
+		
+	</bean>
+</beans>
