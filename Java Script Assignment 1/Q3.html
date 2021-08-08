@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment Q1</title>
+    </head>
+
+    <body>
+        <label for="input"> Enter the number</label>
+        <input name="input"  type="number" id="input">
+        <button onclick="run()">calculate</button>
+        <p id="result"></p>
+
+        <script>
+           function numberSum(N){
+                 if(N%2 == 0) {return res = "The Number is 'Even'";}
+                 else {return res = "The Number is 'Odd'";}
+                }
+
+                function run(){
+                    var val = document.getElementById("input").value;
+                    document.getElementById("result").innerHTML= numberSum(val)
+                }
+            </script>
+    </body>
+</html>
